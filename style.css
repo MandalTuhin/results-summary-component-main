@@ -53,7 +53,7 @@ body {
 
 .hundred {
   font-size: 0.8em;
-  opacity: 0.5;
+  opacity: 0.6;
   font-weight: 700;
 }
 
@@ -82,13 +82,96 @@ body {
 }
 
 .paragraph {
-  font-size: 0.9em;
+  font-size: 0.97em;
+  margin-top: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 button {
   color: white;
-  padding: 1em 8em;
+  padding: 1em;
   border-radius: 100em;
-  font-weight: 500;
+  font-weight: 700;
+  margin: 0 auto;
+  border: none;
+  width: 100%;
+  font-size: 1em;
+  cursor: pointer;
   background-color: var(--dark-gray-blue);
+}
+
+.center {
+  margin: 0 auto;
+  /* background-color: hsl(105, 31%, 50%); */
+  padding: 0 2em;
+}
+
+.text-lg {
+  font-weight: 700;
+  padding: 1.3em 0;
+  font-size: 1.1em;
+}
+
+.stats-area {
+  background: rgb(150, 20, 42);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards {
+  padding: 0.9em 1em;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards + .cards {
+  margin-top: 1.3em;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.059);
+}
+
+.memory {
+  background-color: hsl(39, 100%, 56%, 0.059);
+}
+
+.verbal {
+  background-color: hsl(166, 100%, 37%, 0.059);
+}
+
+.visual {
+  background-color: hsl(234, 85%, 45%, 0.059);
+}
+
+.stat-flex {
+  display: flex;
+  gap: 0.4em;
+  font-weight: 700;
+}
+
+.red {
+  color: hsl(0, 100%, 67%);
+}
+
+.yellow {
+  color: hsl(39, 100%, 56%);
+}
+
+.green {
+  color: hsl(166, 100%, 37%);
+}
+
+.blue {
+  color: hsl(234, 85%, 45%);
+}
+
+.button-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4em 0;
 }
