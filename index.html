@@ -34,50 +34,60 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <section class="blue-section">
-        <div class="result-title">Your Result</div>
-        <div class="circle">
-          <div class="number">76</div>
-          <span class="result-title hundred">of 100</span>
-        </div>
-        <div class="result-title great">Great</div>
-        <p class="result-title hundred paragraph">
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
-      </section>
-      <section class="center">
-        <div class="text-lg">Summary</div>
+    <main class="flex items-center justify-center flex-wrap h-full">
+      <div class="flex container">
+        <section class="blue-section">
+          <div class="text-lg result-title">Your Result</div>
+          <div class="circle">
+            <div class="number">76</div>
+            <span class="hundred">of 100</span>
+          </div>
+          <div class="result-title great">Great</div>
+          <p class="result-title hundred paragraph">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </section>
+        <section class="center">
+          <div class="text-lg">Summary</div>
 
-        <div class="cards reaction">
-          <div class="stat-flex red">
-            <img src="./assets/images/icon-reaction.svg" alt="reaction" />
-            Reaction
+          <div class="cards reaction">
+            <div class="stat-flex red">
+              <img src="./assets/images/icon-reaction.svg" alt="reaction" />
+              Reaction
+            </div>
+            <span class="light-text">
+              <strong class="strong-text">80</strong> / 100
+            </span>
           </div>
-          <span> <strong>80</strong> / 100 </span>
-        </div>
-        <div class="cards memory">
-          <div class="stat-flex yellow">
-            <img src="./assets/images/icon-memory.svg" alt="memory" />Memory
+          <div class="cards memory">
+            <div class="stat-flex yellow">
+              <img src="./assets/images/icon-memory.svg" alt="memory" />Memory
+            </div>
+            <span class="light-text">
+              <strong class="strong-text">92</strong> / 100
+            </span>
           </div>
-          <span> <strong>92</strong> / 100 </span>
-        </div>
-        <div class="cards verbal">
-          <div class="stat-flex green">
-            <img src="./assets/images/icon-verbal.svg" alt="verbal" />Verbal
+          <div class="cards verbal">
+            <div class="stat-flex green">
+              <img src="./assets/images/icon-verbal.svg" alt="verbal" />Verbal
+            </div>
+            <span class="light-text">
+              <strong class="strong-text">61</strong> / 100
+            </span>
           </div>
-          <span><strong> 61 </strong> / 100 </span>
-        </div>
-        <div class="cards visual">
-          <div class="stat-flex blue">
-            <img src="./assets/images/icon-visual.svg" alt="visual" />Visual
+          <div class="cards visual">
+            <div class="stat-flex blue">
+              <img src="./assets/images/icon-visual.svg" alt="visual" />Visual
+            </div>
+            <span class="light-text">
+              <strong class="strong-text">72</strong> / 100
+            </span>
           </div>
-          <span> <strong>72</strong> / 100 </span>
-        </div>
-        <div class="button-area">
-          <button>Continue</button>
-        </div>
-      </section>
+          <div class="button-area">
+            <button>Continue</button>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- <footer>
