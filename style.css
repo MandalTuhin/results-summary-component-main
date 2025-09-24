@@ -36,9 +36,17 @@ body {
 
 .container {
   /* border: 1px solid rgb(228, 8, 45); */
-  border-radius: 2rem;
-  box-shadow: 12px 12px 50px 3px hsla(244, 66%, 15%, 0.142);
+  /* border-radius: 2rem; */
   background: #ffffff;
+  box-shadow: none;
+}
+
+.full-screen {
+  height: 100%;
+}
+
+.contains {
+  width: 100%;
 }
 
 .blue-section {
@@ -71,7 +79,8 @@ body {
 .circle {
   margin: 1em auto;
   aspect-ratio: 1 / 1;
-  width: 80%;
+  width: 60%;
+  max-width: 12em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,9 +151,9 @@ button:focus {
 }
 
 .center {
-  width: 350px;
+  background: #f3f6fd;
   /* border: 1px solid red; */
-  max-width: 100%;
+  /* max-width: 100%; */
   /* background-color: hsl(105, 31%, 50%); */
   padding: 0 2.1em;
 }
@@ -249,12 +258,39 @@ button:focus {
 }
 
 .h-full {
-  min-height: 100vh;
+  height: auto;
 }
 
 @media (min-width: 700px) {
   .blue-section {
-    max-width: 350px;
     border-radius: 2rem;
   }
+
+  .circle {
+    width: 80%;
+    /* max-width: 80%; */
+  }
+
+  .contains {
+    width: 350px;
+  }
+
+  .full-screen {
+    height: auto;
+  }
+
+  .container {
+    border-radius: 2rem;
+    box-shadow: 12px 12px 50px 3px hsla(244, 66%, 15%, 0.142);
+  }
+
+  .h-full {
+    min-height: 100vh;
+  }
+
+  .center {
+    background: #f8fafe;
+    border-radius: 0 2rem 2rem 0;
+  }
+  /* 57 percent works great for the circle */
 }
