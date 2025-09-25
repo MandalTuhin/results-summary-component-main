@@ -248,6 +248,20 @@ button:focus {
   height: auto;
 }
 
+footer {
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background: none;
+  margin: 0.5em;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 @media (min-width: 700px) {
   body {
     background: var(--desktop-background);
