@@ -44,12 +44,7 @@ body {
   background: var(--mobile-background);
 }
 
-/* main {
-} */
-
 .container {
-  /* border: 1px solid rgb(228, 8, 45); */
-  /* border-radius: 2rem; */
   box-shadow: none;
 }
 
@@ -71,15 +66,10 @@ body {
     var(--gr-light-royal-blue)
   );
   border-radius: 0 0 2rem 2rem;
-
-  /*  */
 }
 
 .result-title {
-  /* margin-top: 1em; */
-  /* padding: 1.3em 0; */
   opacity: 0.7;
-  /* font-size: 1.2em; */
 }
 
 .hundred {
@@ -97,10 +87,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   border-radius: 100%;
   background: linear-gradient(var(--gr-violet-blue), hsla(241, 72%, 46%, 0));
 }
@@ -145,14 +131,6 @@ button:hover {
   opacity: 0.9;
 }
 
-/* button:active {
-  background: linear-gradient(
-    var(--gr-light-slate-blue),
-    var(--gr-light-royal-blue)
-  );
-  box-shadow: 0 0 0 0.3em hsla(239, 80%, 60%, 0.808);
-} */
-
 button:active {
   background: var(--gr-light-royal-blue);
 }
@@ -164,9 +142,6 @@ button:focus {
 
 .center {
   background: transparent;
-  /* border: 1px solid red; */
-  /* max-width: 100%; */
-  /* background-color: hsl(105, 31%, 50%); */
   padding: 0 2.1em;
 }
 
@@ -284,7 +259,6 @@ button:focus {
 
   .circle {
     width: 80%;
-    /* max-width: 80%; */
   }
 
   .contains {
@@ -306,8 +280,6 @@ button:focus {
   }
 
   .center {
-    /* background: var(--desktop-foreground); */
     border-radius: 0 2rem 2rem 0;
   }
-  /* 57 percent works great for the circle */
 }
