@@ -16,6 +16,11 @@
   --pale-blue: hsl(221, 100%, 96%);
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
+
+  /* background-colors */
+  --desktop-background: #ecf2ff;
+  --mobile-background: #f3f6fd;
+  --desktop-foreground: #f8fafe;
 }
 
 *,
@@ -28,7 +33,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Hanken Grotesk";
-  background: #ecf2ff;
+  background: var(--mobile-background);
 }
 
 /* main {
@@ -37,7 +42,6 @@ body {
 .container {
   /* border: 1px solid rgb(228, 8, 45); */
   /* border-radius: 2rem; */
-  background: #ffffff;
   box-shadow: none;
 }
 
@@ -151,7 +155,7 @@ button:focus {
 }
 
 .center {
-  background: #f3f6fd;
+  background: transparent;
   /* border: 1px solid red; */
   /* max-width: 100%; */
   /* background-color: hsl(105, 31%, 50%); */
@@ -209,19 +213,19 @@ button:focus {
 }
 
 .red {
-  color: hsl(0, 100%, 67%);
+  color: var(--light-red);
 }
 
 .yellow {
-  color: hsl(39, 100%, 56%);
+  color: var(--orangey-yellow);
 }
 
 .green {
-  color: hsl(166, 100%, 37%);
+  color: var(--green-teal);
 }
 
 .blue {
-  color: hsl(234, 85%, 45%);
+  color: var(--cobalt-blue);
 }
 
 .light-text {
@@ -262,6 +266,10 @@ button:focus {
 }
 
 @media (min-width: 700px) {
+  body {
+    background: var(--desktop-background);
+  }
+
   .blue-section {
     border-radius: 2rem;
   }
@@ -280,6 +288,7 @@ button:focus {
   }
 
   .container {
+    background: var(--desktop-foreground);
     border-radius: 2rem;
     box-shadow: 12px 12px 50px 3px hsla(244, 66%, 15%, 0.142);
   }
@@ -289,7 +298,7 @@ button:focus {
   }
 
   .center {
-    background: #f8fafe;
+    /* background: var(--desktop-foreground); */
     border-radius: 0 2rem 2rem 0;
   }
   /* 57 percent works great for the circle */
