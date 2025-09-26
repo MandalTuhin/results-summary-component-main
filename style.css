@@ -44,6 +44,9 @@
   --desktop-background: #ecf2ff;
   --mobile-background: #f3f6fd;
   --desktop-foreground: #f8fafe;
+
+  /* shadows */
+  --container-shadow: 12px 12px 50px 3px hsla(244, 66%, 15%, 0.142);
 }
 
 *,
@@ -55,7 +58,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
   margin: 0;
   padding: 0;
 }
@@ -127,7 +131,6 @@ body {
   font-size: 1.015em;
   font-weight: 500;
   opacity: 0.7;
-  margin-top: 0;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
@@ -297,7 +300,7 @@ button:focus {
   .container {
     background: var(--desktop-foreground);
     border-radius: 2rem;
-    box-shadow: 12px 12px 50px 3px hsla(244, 66%, 15%, 0.142);
+    box-shadow: var(--container-shadow);
   }
 
   .h-full {
