@@ -86,7 +86,7 @@ body {
 .blue-section {
   color: white;
   text-align: center;
-  padding: 0.3em 4em 1.2em 4em;
+  padding: 0.3em min(4em, 20vw) 1.2em min(4em, 20vw);
   margin: 0;
   background: var(--blue-gradient-background);
   border-radius: 0 0 2rem 2rem;
